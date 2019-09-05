@@ -1,0 +1,17 @@
+type User {
+  id: ID!
+  facebookId: String
+  role: Role!
+  email: String!
+  name: String!
+  password: String
+  deleted: Boolean!
+  createdPosts: [Post!]
+  createdAt: String!
+  updatedAt: String!
+}
+
+enum Role {
+  REGULAR
+  ADMIN
+}
